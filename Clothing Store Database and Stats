@@ -1,0 +1,22 @@
+In this SQL, I am querying a database with multiple columns and statistics in order to quanitfy prices, quantity, and sizes for each item.
+
+CREATE TABLE Items (id integer primary key, item TEXT, quantity INTEGER, price INTEGER, xsmall INTEGER, small INTEGER, Medium INTEGER, Large INTEGER ); 
+INSERT INTO Items VALUES (1, "Red Shirts", 10, 9.99, 5,5,5,5);
+INSERT INTO Items VALUES (2, "Denim Skirts", 5, 19.99, 10, 7, 5, 5);
+INSERT INTO Items VALUES (3, "Socks", 10, 5.99,5,5,5,5 );
+INSERT INTO Items Values (4, "Sweaters", 15, 29.99,8,8,8,8);
+INSERT INTO Items Values (5, "Long Sleeve Shirts", 8, 10.99,10,10,10,10);
+INSERT INTO Items Values (6, "Dresses", 10, 15.99, 5,5,5,3);
+INSERT INTO Items Values (7, "Jeans", 25, 39.99,5,5,5,5);
+INSERT INTO Items Values (8, "Underwear", 20, 9.99,5,5,5,5);
+INSERT INTO Items Values (9, "Leggings", 15, 30.00,5,5,5,5);
+INSERT INTO Items Values (10, "Sports Bras", 15, 20.00,5,5,5,5);
+INSERT INTO Items Values (11, "Hats", 10, 12.99,5,5,5,5);
+INSERT INTO Items Values (12, "Scarves", 5, 5.99,5,5,5,5);
+INSERT INTO Items Values (13, "Sweatpants", 10, 15.99,5,5,5,5);
+INSERT INTO Items Values (14, "Denim Shorts", 5, 20.00,5,5,5,5);
+INSERT INTO Items Values (15, "Hoodies", 10, 14.99,5,5,5,5);
+
+Here I then put the items in order by price and select all items that have a quantity greater than 5 to demonstrate this certain statistic.  
+SELECT * FROM Items ORDER BY price;
+SELECT * FROM ITEMS WHERE quantity > 5 
